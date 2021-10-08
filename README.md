@@ -1,3 +1,3 @@
 # React Calculator App
 
-Click here to view live [Calculator App](https://tanzila-calculator.herokuapp.com/ )
+Click here to view live [Calculator APP](https://tanzila-calculator.herokuapp.com/ )
