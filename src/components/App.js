@@ -1,8 +1,8 @@
 // import './App.css';
-import Wrapper from './components/Wrapper';
-import Display from './components/Display';
-import Button from './components/Button';
-import ButtonPanel from './components/ButtonPanel';
+import Wrapper from './Wrapper';
+import Display from './Display';
+import Button from './Button';
+import ButtonPanel from './ButtonPanel';
 
 const btnValues = [
   ['C', '+-', '%', '/'],
@@ -30,10 +30,6 @@ function App() {
           ))}
         </ButtonPanel>
       </Wrapper>
-
-      {/* <div className="content">
-        <h1>App components</h1>
-      </div> */}
     </div>
   );
 }
