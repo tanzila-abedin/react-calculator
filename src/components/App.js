@@ -22,9 +22,6 @@ function App() {
               key={btn}
               className={btn === '=' ? 'equals' : ''}
               value={String(btn)}
-              onClick={() => {
-                console.log(`${btn} clicked!`);
-              }}
             />
           ))}
         </ButtonPanel>
