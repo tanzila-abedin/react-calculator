@@ -1,6 +1,4 @@
-// import PropTypes from 'prop-types';
 import PropTypes from 'prop-types';
-// import '../App.css';
 
 const ButtonPanel = ({ children }) => (
   <div className="buttonPanel">{children}</div>

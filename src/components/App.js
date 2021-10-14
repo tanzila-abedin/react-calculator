@@ -1,4 +1,3 @@
-// import './App.css';
 import Wrapper from './Wrapper';
 import Display from './Display';
 import Button from './Button';
