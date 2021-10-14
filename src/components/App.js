@@ -13,7 +13,7 @@ const btnValues = [
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Wrapper>
         <Display value="0" />
         <ButtonPanel>
@@ -29,7 +29,7 @@ function App() {
           ))}
         </ButtonPanel>
       </Wrapper>
-    </div>
+    </>
   );
 }
 
