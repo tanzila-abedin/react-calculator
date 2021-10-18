@@ -1,4 +1,4 @@
-/* .wrapper {
+.wrapper {
   width: 340px;
   height: 540px;
   padding: 10px;
@@ -53,4 +53,4 @@ button:hover {
 
 .equals:hover {
   background-color: rgb(228, 39, 15);
-} */
+}

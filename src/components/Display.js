@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import { Textfit } from 'react-textfit';
-// import '../App.css';
+import '../App.css';
 
-const Display = ({ value = 0 }) => (
+const Display = ({ value }) => (
   <Textfit className="display" mode="single" max={70}>
-    {value}
+    {value || '0'}
   </Textfit>
 );
 
