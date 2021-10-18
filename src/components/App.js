@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Wrapper from './Wrapper';
 import Display from './Display';
 import Button from './Button';
@@ -13,31 +13,47 @@ const btnValues = [
   ['0', '.', '='],
 ];
 
-function App() {
-  const [calc, setCalc] = useState({ total: '', next: '', operation: '' });
-  const { total, next, operation } = calc;
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: '',
+      next: '',
+      operation: '',
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
 
-  const handleClick = (buttonName) => {
-    setCalc(calculate({ total, next, operation }, buttonName));
+  handleClick = (buttonName) => {
+    const { total, next, operation } = this.state;
+    const result = calculate({ total, next, operation }, buttonName);
+    this.setState({
+      total: result.total,
+      next: result.next,
+      operation: result.operation,
+    });
   };
 
-  return (
-    <>
-      <Wrapper>
-        <Display value={total} />
-        <ButtonPanel>
-          {btnValues.flat().map((btn) => (
-            <Button
-              key={btn}
-              className={btn === '=' ? 'equals' : ''}
-              value={String(btn)}
-              onClick={() => handleClick(btn)}
-            />
-          ))}
-        </ButtonPanel>
-      </Wrapper>
-    </>
-  );
+  render() {
+    const { total } = this.state;
+    return (
+      <>
+        <Wrapper>
+          <Display value={total} />
+          <ButtonPanel>
+            {btnValues.flat().map((btn) => (
+              <Button
+                key={btn}
+                className={btn === '=' ? 'equals' : ''}
+                value={String(btn)}
+                onClick={() => this.handleClick(btn)}
+              />
+            ))}
+          </ButtonPanel>
+        </Wrapper>
+      </>
+    );
+  }
 }
 
 export default App;
