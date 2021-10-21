@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import '../App.css';
+import '../style/App.css';
 
 const Wrapper = ({ children }) => <div className="wrapper">{children}</div>;
 
