@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './Home';
 import Wrapper from './Wrapper';
 import Display from './Display';
 import Button from './Button';
@@ -25,7 +23,6 @@ function App() {
 
   return (
     <>
-      <Home />
       <Wrapper>
         <Display value={total} />
         <ButtonPanel>
