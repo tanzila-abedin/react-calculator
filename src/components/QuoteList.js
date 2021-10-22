@@ -6,6 +6,9 @@ const QuoteTemplate = ({ quotes }) => {
   const random = quotes[Math.floor(Math.random() * quotes.length)];
   return (
     <div className="quoteList container">
+      <h4 className="text-center top-head pt-2">
+        <strong>Quotes by Famous Mathmaticians</strong>
+      </h4>
       <div className="quote-temp text-center p-3" key={random.id}>
         <img
           className="quote-img rounded-pill mx-auto d-block"
