@@ -24,7 +24,11 @@ function App() {
   return (
     <>
       <div className="container">
-        <div className="d-flex justify-content-center p-3">
+        <h4 className="text-center top-head pb-0">
+          <strong>Calculator App</strong>
+        </h4>
+        <h5 className="text-center sub-head pt-0">Built by Tanzila Abedin</h5>
+        <div className="d-flex justify-content-center p-2">
           <Wrapper>
             <Display value={total} />
             <ButtonPanel>
