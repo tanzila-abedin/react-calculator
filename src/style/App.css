@@ -1,3 +1,11 @@
+.sub-head {
+  color: rgb(243, 29, 154);
+}
+
+.top-head {
+  color: blue;
+}
+
 .wrapper {
   width: 340px;
   height: 540px;
