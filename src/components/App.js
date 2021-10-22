@@ -23,19 +23,23 @@ function App() {
 
   return (
     <>
-      <Wrapper>
-        <Display value={total} />
-        <ButtonPanel>
-          {btnValues.flat().map((btn) => (
-            <Button
-              key={btn}
-              className={btn === '=' ? 'equals' : ''}
-              value={String(btn)}
-              onClick={() => handleClick(btn)}
-            />
-          ))}
-        </ButtonPanel>
-      </Wrapper>
+      <div className="container">
+        <div className="d-flex justify-content-center p-3">
+          <Wrapper>
+            <Display value={total} />
+            <ButtonPanel>
+              {btnValues.flat().map((btn) => (
+                <Button
+                  key={btn}
+                  className={btn === '=' ? 'equals' : ''}
+                  value={String(btn)}
+                  onClick={() => handleClick(btn)}
+                />
+              ))}
+            </ButtonPanel>
+          </Wrapper>
+        </div>
+      </div>
     </>
   );
 }

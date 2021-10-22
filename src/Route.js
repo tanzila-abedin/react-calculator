@@ -2,11 +2,11 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import App from './components/App';
 import Home from './components/Home';
 import Quote from './components/Quote';
-import Navbar from './Navbar';
+import Navigation from './Navbar';
 
 const Routes = () => (
   <Router>
-    <Navbar />
+    <Navigation />
     <Switch>
       <Route exact path="/">
         <Home />

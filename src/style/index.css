@@ -8,7 +8,28 @@
 
 body {
   height: 100vh;
+  background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+}
+
+.navbar {
+  padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #a7a7a7;
+}
+
+.navbar .links {
+  margin-inline: auto;
+}
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.navbar a:hover {
+  color: #f1356d;
 }
