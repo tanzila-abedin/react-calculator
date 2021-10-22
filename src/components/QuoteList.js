@@ -12,7 +12,7 @@ const QuoteTemplate = ({ quotes }) => {
           src={random.images}
           alt=""
         />
-        <h2>{random.body}</h2>
+        <h3 className="quote-body p-2">{random.body}</h3>
         <p>{random.author}</p>
       </div>
     </div>
