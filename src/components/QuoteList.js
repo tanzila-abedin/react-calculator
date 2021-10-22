@@ -1,11 +1,17 @@
 import PropTypes from 'prop-types';
+import React from 'react';
+import '../style/Quote.css';
 
 const QuoteTemplate = ({ quotes }) => {
   const random = quotes[Math.floor(Math.random() * quotes.length)];
   return (
-    <div className="quoteList">
-      <div className="quote-temp" key={random.id}>
-        <div className="quote-img">{random.images}</div>
+    <div className="quoteList container">
+      <div className="quote-temp text-center p-3" key={random.id}>
+        <img
+          className="quote-img rounded-pill mx-auto d-block"
+          src={random.images}
+          alt=""
+        />
         <h2>{random.body}</h2>
         <p>{random.author}</p>
       </div>
@@ -14,6 +20,14 @@ const QuoteTemplate = ({ quotes }) => {
 };
 
 QuoteTemplate.propTypes = {
-  quotes: PropTypes.arrayOf(PropTypes.element).isRequired,
+  quotes: PropTypes.arrayOf(
+    PropTypes.shape({
+      images: PropTypes.string,
+      body: PropTypes.string,
+      author: PropTypes.string,
+      id: PropTypes.number.isRequired,
+    }),
+  ).isRequired,
 };
+
 export default QuoteTemplate;
