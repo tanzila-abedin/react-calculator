@@ -3,7 +3,7 @@ import { Textfit } from 'react-textfit';
 import '../App.css';
 
 const Display = ({ value }) => (
-  <Textfit className="display" mode="single" max={70}>
+  <Textfit className="display" mode="single" max={60}>
     {value || '0'}
   </Textfit>
 );
