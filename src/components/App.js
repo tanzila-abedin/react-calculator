@@ -13,7 +13,7 @@ const btnValues = [
   ['0', '.', '='],
 ];
 
-function App() {
+function Calculator() {
   const [calc, setCalc] = useState({ total: '', next: '', operation: '' });
   const { total, next, operation } = calc;
 
@@ -28,7 +28,10 @@ function App() {
           <strong>Calculator App</strong>
         </h4>
         <h5 className="text-center sub-head pt-0">Built by Tanzila Abedin</h5>
-        <div className="d-flex justify-content-center p-2">
+        <div
+          className="d-flex justify-content-center p-2"
+          data-testid="wrapper"
+        >
           <Wrapper>
             <Display value={total} />
             <ButtonPanel>
@@ -48,4 +51,4 @@ function App() {
   );
 }
 
-export default App;
+export default Calculator;
