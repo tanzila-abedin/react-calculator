@@ -19,6 +19,7 @@ const operate = (numOne, numTwo, operation) => {
       result = a.div(100);
     }
   }
+
   return result.toString();
 };
 
