@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Routes snapshot testing 1`] = `
+Array [
+  <nav
+    className="navbar"
+  >
+    <div
+      className="links"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+      <a
+        href="/Calculator"
+        onClick={[Function]}
+      >
+        Calculator
+      </a>
+      <a
+        href="/Quote"
+        onClick={[Function]}
+      >
+        Quotes
+      </a>
+    </div>
+  </nav>,
+  <div
+    className="home container p-5"
+  >
+    <p
+      className="text-center welcome-text"
+      data-testid="welcomeText"
+    >
+      Welcome to Math Magician website
+    </p>
+  </div>,
+]
+`;

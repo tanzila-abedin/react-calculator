@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import App from './components/App';
+import Calculator from './components/App';
 import Home from './components/Home';
 import Quote from './components/Quote';
 import Navigation from './Navbar';
@@ -11,8 +11,8 @@ const Routes = () => (
       <Route exact path="/">
         <Home />
       </Route>
-      <Route path="/Wrapper">
-        <App />
+      <Route path="/Calculator">
+        <Calculator />
       </Route>
       <Route path="/Quote">
         <Quote />
