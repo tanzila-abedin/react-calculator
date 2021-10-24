@@ -1,12 +1,8 @@
 import PropTypes from 'prop-types';
-import { Textfit } from 'react-textfit';
+// import { Textfit } from 'react-textfit';
 import '../style/App.css';
 
-const Display = ({ value }) => (
-  <Textfit className="display" mode="single" max={70}>
-    {value || '0'}
-  </Textfit>
-);
+const Display = ({ value }) => <div className="display">{value || '0'}</div>;
 
 Display.propTypes = {
   value: PropTypes.string,
