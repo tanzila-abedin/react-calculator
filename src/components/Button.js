@@ -2,7 +2,12 @@ import '../style/App.css';
 import PropTypes from 'prop-types';
 
 const Button = ({ className, value, onClick }) => (
-  <button type="button" className={className} onClick={onClick}>
+  <button
+    type="button"
+    data-testid="test-btn"
+    className={className}
+    onClick={onClick}
+  >
     {value}
   </button>
 );
