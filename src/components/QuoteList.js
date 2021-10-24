@@ -5,11 +5,15 @@ import '../style/Quote.css';
 const QuoteTemplate = ({ quotes }) => {
   const random = quotes[Math.floor(Math.random() * quotes.length)];
   return (
-    <div className="quoteList container">
-      <h4 className="text-center top-head pt-2">
+    <div className="quoteList container ">
+      <h4 className="text-center top-head pt-2 " data-testid="test-temp">
         <strong>Quotes by Famous Mathmaticians</strong>
       </h4>
-      <div className="quote-temp text-center p-3" key={random.id}>
+      <div
+        className="quote-temp text-center p-3"
+        data-testid="data-quote"
+        key={random.id}
+      >
         <img
           className="quote-img rounded-pill mx-auto d-block"
           src={random.images}
@@ -28,7 +32,7 @@ QuoteTemplate.propTypes = {
       images: PropTypes.string,
       body: PropTypes.string,
       author: PropTypes.string,
-      id: PropTypes.number.isRequired,
+      id: PropTypes.number,
     }),
   ).isRequired,
 };
