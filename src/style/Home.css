@@ -23,6 +23,7 @@
   0% {
     background-position-x: -500%;
   }
+
   100% {
     background-position-x: 500%;
   }
