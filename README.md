@@ -2,10 +2,6 @@
 
 Click here to view live [Calculator APP](https://tanzila-calculator.herokuapp.com/ )
 
-# React Calculator
-
-[Click here to view live demo](https://react-calculator-rb.herokuapp.com/)
-
 A calculator web app built using React. Hosted on Heroku. 
 
 ![screenshot](./src/assets/screencapture-Calculator.png)
