@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` Snapshot of Display component to show output of a button when clicked 1`] = `
+<div
+  className="display"
+>
+  10
+</div>
+`;
